@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nur E Jannat Asha | Software Engineer & AI Researcher</title>
+  <meta name="description" content="Personal portfolio of Nur E Jannat Asha - M.Sc. Software Engineering (LUT University). AI Researcher, Backend & Systems Engineer based in Espoo, Finland." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Top Bar & Hero -->
+    <header>
+      <div class="top-bar">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Espoo, Finland &bull; Open to Roles & Research</span>
+        </div>
+      </div>
+
+      <div class="profile-intro">
+        <h1>Nur E Jannat Asha</h1>
+        <div class="profile-title">Software Engineer &bull; AI & Systems Researcher</div>
+        <p class="bio-lead">
+          Master of Science in Software Engineering and Digital Transformation from <strong>LUT University, Finland (CGPA: 4.24 / 5.00)</strong>. 
+          Specialized in <strong>Trustworthy AI & LLM Hallucination Mitigation</strong>, <strong>Backend & Distributed Systems</strong>, and <strong>Deterministic C++ Embedded Architectures</strong>. 
+          Author of 5 peer-reviewed publications across IEEE and Elsevier journals.
+        </p>
+
+        <div class="contact-row">
+          <a href="mailto:jannatashanur@gmail.com" class="contact-btn primary">Email Me</a>
+          <button id="copy-email-btn" class="contact-btn">Copy Email</button>
+          <a href="https://github.com/Jannat332" target="_blank" rel="noopener" class="contact-btn">GitHub</a>
+          <a href="https://linkedin.com/in/nur-e-jannat-asha" target="_blank" rel="noopener" class="contact-btn">LinkedIn</a>
+          <a href="https://scholar.google.com" target="_blank" rel="noopener" class="contact-btn">Google Scholar</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tailored Resumes -->
+    <section>
+      <div class="section-head">
+        <h2>Tailored Curricula Vitae</h2>
+        <span class="count">3 Profiles</span>
+      </div>
+      <div class="cv-deck">
+        <div class="cv-card">
+          <div>
+            <h3>Academic CV (PhD Track)</h3>
+            <p>Focused on neuro-symbolic AI, LLM hallucination mitigation, uncertainty quantification, and 5 academic publications.</p>
+          </div>
+          <a href="cv/phd_cv.html" target="_blank" class="cv-link">View Academic CV &rarr;</a>
+        </div>
+
+        <div class="cv-card">
+          <div>
+            <h3>AI Engineer CV</h3>
+            <p>Focused on RAG pipelines, Knowledge Graph ontology grounding, PyTorch, HuggingFace transformers, and model evaluation.</p>
+          </div>
+          <a href="cv/ai_engineer_cv.html" target="_blank" class="cv-link">View AI Engineer CV &rarr;</a>
+        </div>
+
+        <div class="cv-card">
+          <div>
+            <h3>Backend Software Engineer CV</h3>
+            <p>Focused on Python, Modern C++17, Linux systems, REST APIs (FastAPI), Docker multi-stage builds, and CI/CD pipelines.</p>
+          </div>
+          <a href="cv/backend_cv.html" target="_blank" class="cv-link">View Backend CV &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section>
+      <div class="section-head">
+        <h2>Selected Engineering Projects</h2>
+        <span class="count">6 Repositories</span>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="ai">AI & Research</button>
+        <button class="tab-btn" data-filter="systems">Systems & Backend</button>
+        <button class="tab-btn" data-filter="embedded">Embedded & 5G</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 1. LLM Parallel Reasoning -->
+        <div class="project-card" data-category="ai">
+          <div class="project-top">
+            <a href="https://github.com/Jannat332/llm-parallel-reasoning" target="_blank" rel="noopener" class="project-name">
+              llm-parallel-reasoning &nearr;
+            </a>
+            <span class="project-meta">Research &bull; Python</span>
+          </div>
+          <p class="project-desc">
+            Dual-path neuro-symbolic clinical reasoning engine fusing unstructured RAG with deterministic Knowledge Graph ontologies. Reduces generative hallucination rates by 40%+ using mathematical confidence fusion.
+          </p>
+          <div class="project-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">HuggingFace</span>
+            <span class="tag">Knowledge Graphs</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Hallucination Mitigation</span>
+          </div>
+        </div>
+
+        <!-- 2. 5G Network Slice QoS -->
+        <div class="project-card" data-category="embedded systems">
+          <div class="project-top">
+            <a href="https://github.com/Jannat332/5g-network-slice-demo" target="_blank" rel="noopener" class="project-name">
+              5g-network-slice-demo &nearr;
+            </a>
+            <span class="project-meta">Telecom &bull; Python</span>
+          </div>
+          <p class="project-desc">
+            Discrete-event simulation modeling 3GPP Release 16/17 network slicing. Demonstrates how strict-priority queueing protects critical URLLC latency (sub-1ms) from bufferbloat during peak eMBB 4K video congestion.
+          </p>
+          <div class="project-tags">
+            <span class="tag">3GPP TS 23.501</span>
+            <span class="tag">5QI QoS</span>
+            <span class="tag">URLLC vs eMBB</span>
+            <span class="tag">Queueing Theory</span>
+          </div>
+        </div>
+
+        <!-- 3. Traffic Light Controller -->
+        <div class="project-card" data-category="embedded systems">
+          <div class="project-top">
+            <a href="https://github.com/Jannat332/traffic-light-controller" target="_blank" rel="noopener" class="project-name">
+              traffic-light-controller &nearr;
+            </a>
+            <span class="project-meta">Safety-Critical &bull; C++17</span>
+          </div>
+          <p class="project-desc">
+            Cycle-accurate 4-way intersection controller implemented in modern C++17. Features deterministic state machine sequencing, pedestrian minimum-green guards, and emergency vehicle all-red clearance invariants.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C++17</span>
+            <span class="tag">Finite State Machine</span>
+            <span class="tag">Safety Invariants</span>
+            <span class="tag">CMake</span>
+          </div>
+        </div>
+
+        <!-- 4. Stock Signal Alerts -->
+        <div class="project-card" data-category="systems">
+          <div class="project-top">
+            <a href="https://github.com/Jannat332/stock-signal-alerts" target="_blank" rel="noopener" class="project-name">
+              stock-signal-alerts &nearr;
+            </a>
+            <span class="project-meta">Quantitative &bull; Python</span>
+          </div>
+          <p class="project-desc">
+            Quantitative analysis tool computing 20/50-day Simple Moving Average crossovers and 14-day Wilder's RSI momentum boundaries with structured BUY/SELL/HOLD signal generation and JSON automation exports.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Technical Analysis</span>
+            <span class="tag">REST Feeds</span>
+          </div>
+        </div>
+
+        <!-- 5. DevOps CI Template -->
+        <div class="project-card" data-category="systems">
+          <div class="project-top">
+            <a href="https://github.com/Jannat332/github-actions-ci-template" target="_blank" rel="noopener" class="project-name">
+              github-actions-ci-template &nearr;
+            </a>
+            <span class="project-meta">DevOps &bull; Docker</span>
+          </div>
+          <p class="project-desc">
+            Hardened CI/CD pipeline template with multi-stage Docker builds, non-root user execution (`appuser`), automated Python matrix test runners, and Docker Compose local orchestration.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Security Hardening</span>
+          </div>
+        </div>
+
+        <!-- 6. Personal Budget App -->
+        <div class="project-card" data-category="systems">
+          <div class="project-top">
+            <a href="https://github.com/Jannat332/personal-budget-app" target="_blank" rel="noopener" class="project-name">
+              personal-budget-app &nearr;
+            </a>
+            <span class="project-meta">Frontend &bull; React 18</span>
+          </div>
+          <p class="project-desc">
+            Responsive personal finance console with real-time category distribution, dynamic balance tracking, search filtering, and browser localStorage persistence.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React 18</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">CSS Grid</span>
+            <span class="tag">State Management</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section>
+      <div class="section-head">
+        <h2>Peer-Reviewed Publications</h2>
+        <span class="count">Google Scholar</span>
+      </div>
+
+      <div class="pub-list">
+        <div class="pub-item">
+          <div class="pub-title">Mitigation of hallucination in response to mental health counseling by large language models</div>
+          <div class="pub-authors">Nur E Jannat Asha</div>
+          <div class="pub-venue">Master's Thesis, LUT University School of Engineering Science, LUTPub, 2025.</div>
+          <a href="https://lutpub.lut.fi" target="_blank" rel="noopener" class="pub-link">View in LUTPub &rarr;</a>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">Low-Cost Heart Rate Sensor and Mental Stress Detection Using Machine Learning</div>
+          <div class="pub-authors">Nur E Jannat Asha, R. Khan, Ehtesum-Ul-Islam</div>
+          <div class="pub-venue">5th International Conference on Trends in Electronics and Informatics (ICOEI), IEEE, 2021.</div>
+          <a href="https://doi.org/10.1109/ICOEI51242.2021.9452873" target="_blank" rel="noopener" class="pub-link">DOI: 10.1109/ICOEI51242.2021.9452873 &rarr;</a>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">MRT-lattice Boltzmann simulation of magnetic field effects on heat transfer from a heater in a C-shaped cavity filled with non-Newtonian hybrid nanofluids</div>
+          <div class="pub-authors">Nur E Jannat Asha, P. Nag, M. N. Akhter, M. M. Molla</div>
+          <div class="pub-venue">International Journal of Thermofluids (Elsevier), Vol 18, 2023.</div>
+          <a href="https://doi.org/10.1016/j.ijft.2023.100346" target="_blank" rel="noopener" class="pub-link">DOI: 10.1016/j.ijft.2023.100346 &rarr;</a>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">MRT-lattice Boltzmann simulation of MHD natural convection of Bingham nanofluid in a C-shaped enclosure with response surface analysis</div>
+          <div class="pub-authors">Nur E Jannat Asha, M. M. Molla</div>
+          <div class="pub-venue">Heliyon (Elsevier), Vol 9(11), 2023.</div>
+          <a href="https://doi.org/10.1016/j.heliyon.2023.e21586" target="_blank" rel="noopener" class="pub-link">DOI: 10.1016/j.heliyon.2023.e21586 &rarr;</a>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-title">Mesoscopic simulation of viscoelastic hybrid nanofluid having variable thermophysical properties in an inverted T-shaped enclosure with a localized heater</div>
+          <div class="pub-authors">I. Jahan, Nur E Jannat Asha, M. M. Molla</div>
+          <div class="pub-venue">Case Studies in Thermal Engineering (Elsevier), Vol 53, 2024.</div>
+          <a href="https://doi.org/10.1016/j.csite.2023.103892" target="_blank" rel="noopener" class="pub-link">DOI: 10.1016/j.csite.2023.103892 &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section>
+      <div class="section-head">
+        <h2>Experience & Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <span class="timeline-role">M.Sc. in Software Engineering and Digital Transformation</span>
+            <span class="timeline-period">2024 &ndash; 2025</span>
+          </div>
+          <div class="timeline-sub">LUT University &bull; Lappeenranta, Finland</div>
+          <div class="timeline-details">
+            Graduated with Distinction (CGPA: 4.24 / 5.00). Specialized in deep learning, software architecture, and generative AI hallucination mitigation.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <span class="timeline-role">Machine Learning & Computational Research Assistant</span>
+            <span class="timeline-period">2023 &ndash; 2024</span>
+          </div>
+          <div class="timeline-sub">North South University</div>
+          <div class="timeline-details">
+            Developed computational numerical software in C++, Python, and CUDA GPU computing. Co-authored 3 Elsevier peer-reviewed journal papers.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <span class="timeline-role">Junior Software Engineer</span>
+            <span class="timeline-period">2021 &ndash; 2022</span>
+          </div>
+          <div class="timeline-sub">Spectrum IT Solutions</div>
+          <div class="timeline-details">
+            Developed and refactored backend modules in C, C++, and Python in Linux environments. Conducted automated unit testing and defect triage.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <span class="timeline-role">B.Sc. in Computer Science and Engineering</span>
+            <span class="timeline-period">2016 &ndash; 2021</span>
+          </div>
+          <div class="timeline-sub">North South University &bull; Dhaka, Bangladesh</div>
+          <div class="timeline-details">
+            CGPA: 3.44 / 4.00. Strong foundation in algorithms, embedded microprocessors, and machine learning. Published IEEE thesis on PPG sensor stress detection.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2026 Nur E Jannat Asha &bull; Built with semantic HTML &amp; vanilla CSS &bull; Espoo, Finland
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
