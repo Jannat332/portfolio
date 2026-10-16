@@ -5,11 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nur E Jannat Asha - Software Engineer CV</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
   @page {
     size: A4;
-    margin: 10mm 12mm 10mm 12mm;
+    margin: 12mm 15mm 12mm 15mm;
   }
 
   * {
@@ -19,11 +17,11 @@
   }
 
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #0f172a;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e293b;
     background-color: #ffffff;
-    line-height: 1.38;
-    font-size: 9pt;
+    line-height: 1.35;
+    font-size: 9.2pt;
   }
 
   a {
@@ -31,228 +29,123 @@
     text-decoration: none;
   }
 
-  a:hover {
-    text-decoration: underline;
-  }
-
   /* Header */
   .header {
+    text-align: center;
     border-bottom: 2px solid #0f172a;
     padding-bottom: 8px;
-    margin-bottom: 8px;
-  }
-
-  .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 4px;
+    margin-bottom: 9px;
   }
 
   .name {
     font-size: 19pt;
-    font-weight: 800;
+    font-weight: bold;
     letter-spacing: 0.5px;
     color: #0f172a;
     text-transform: uppercase;
+    margin-bottom: 2px;
   }
 
   .title {
-    font-size: 11pt;
-    font-weight: 700;
+    font-size: 10.5pt;
+    font-weight: bold;
     color: #1d4ed8;
-    letter-spacing: 0.2px;
+    margin-bottom: 4px;
   }
 
-  .contact-bar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6px 14px;
-    font-size: 8.5pt;
+  .contact-line {
+    font-size: 8.6pt;
     color: #334155;
-    margin-top: 5px;
+    margin-bottom: 3px;
+    line-height: 1.4;
   }
 
-  .contact-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .status-badge {
-    margin-top: 6px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .badge {
-    background-color: #f1f5f9;
-    color: #0f172a;
-    border: 1px solid #cbd5e1;
-    border-radius: 4px;
-    padding: 2px 7px;
-    font-size: 7.8pt;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-  }
-
-  .badge.highlight {
-    background-color: #eff6ff;
-    color: #1e40af;
-    border-color: #bfdbfe;
-  }
-
-  /* Highlights Box */
-  .highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    margin-bottom: 8px;
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 5px;
-    padding: 7px 10px;
-  }
-
-  .highlight-card {
-    text-align: center;
-  }
-
-  .highlight-val {
-    font-size: 11pt;
-    font-weight: 800;
-    color: #1d4ed8;
-    line-height: 1.1;
-  }
-
-  .highlight-lbl {
-    font-size: 7.4pt;
-    font-weight: 600;
+  .status-line {
+    font-size: 8.2pt;
+    font-weight: bold;
     color: #475569;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
     margin-top: 2px;
   }
 
   /* Sections */
   .section {
-    margin-bottom: 7.5px;
+    margin-bottom: 8px;
     page-break-inside: avoid;
   }
 
   .section-title {
-    font-size: 9.6pt;
-    font-weight: 800;
+    font-size: 10pt;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.6px;
     color: #0f172a;
     border-bottom: 1.5px solid #0f172a;
     padding-bottom: 2px;
     margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
   }
 
-  .section-title .section-tag {
-    font-size: 7.6pt;
-    font-weight: 500;
-    color: #64748b;
-    text-transform: none;
-    letter-spacing: normal;
-  }
-
-  /* Summary */
-  .summary-text {
-    font-size: 8.7pt;
+  /* Paragraphs */
+  p.summary {
+    font-size: 8.8pt;
     color: #1e293b;
     text-align: justify;
-    line-height: 1.38;
+    line-height: 1.36;
   }
 
-  /* Skills Table */
-  .skills-table {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5px;
-    font-size: 8.6pt;
+  /* Skills */
+  .skill-group {
+    font-size: 8.7pt;
+    margin-bottom: 2.5px;
+    line-height: 1.32;
   }
 
-  .skill-row {
-    display: flex;
-    line-height: 1.3;
-  }
-
-  .skill-cat {
-    font-weight: 700;
+  .skill-label {
+    font-weight: bold;
     color: #0f172a;
-    min-width: 175px;
-    max-width: 175px;
-    flex-shrink: 0;
   }
 
-  .skill-vals {
-    color: #334155;
-    flex: 1;
-  }
-
-  /* Experience & Projects */
+  /* Entries */
   .entry {
-    margin-bottom: 5.5px;
+    margin-bottom: 6px;
+    page-break-inside: avoid;
   }
 
   .entry-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 1px;
   }
 
   .entry-title {
-    font-size: 9.1pt;
-    font-weight: 700;
+    font-size: 9.2pt;
+    font-weight: bold;
     color: #0f172a;
   }
 
-  .entry-company {
-    font-weight: 700;
-    color: #1d4ed8;
-  }
-
-  .entry-meta {
-    font-size: 8.3pt;
-    font-weight: 600;
+  .entry-date {
+    font-size: 8.5pt;
+    font-weight: bold;
     color: #64748b;
     white-space: nowrap;
   }
 
-  .entry-subtitle {
-    font-size: 8.1pt;
+  .entry-sub {
+    font-size: 8.3pt;
     color: #475569;
-    font-weight: 500;
+    font-style: italic;
     margin-bottom: 2px;
   }
 
-  .repo-tag {
-    font-family: monospace;
-    font-size: 8pt;
-    background: #f1f5f9;
-    padding: 1px 4px;
-    border-radius: 3px;
-    border: 1px solid #cbd5e1;
-    color: #0f172a;
-  }
-
+  /* Bullets */
   ul.bullet-list {
-    margin-left: 15px;
+    margin-left: 16px;
     margin-top: 2px;
     list-style-type: disc;
   }
 
   ul.bullet-list li {
-    font-size: 8.5pt;
+    font-size: 8.6pt;
     color: #1e293b;
     margin-bottom: 2px;
     line-height: 1.33;
@@ -262,40 +155,11 @@
     color: #0f172a;
   }
 
-  /* Education */
-  .edu-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 1px;
-  }
-
-  .degree {
-    font-size: 9pt;
-    font-weight: 700;
-    color: #0f172a;
-  }
-
-  .institution {
-    font-size: 8.8pt;
-    color: #1d4ed8;
-    font-weight: 600;
-  }
-
-  .edu-meta {
-    font-size: 8.2pt;
-    color: #475569;
-    margin-bottom: 3px;
-  }
-
   /* Print settings */
   @media print {
     body {
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
-    }
-    .page-break {
-      page-break-before: always;
     }
   }
 </style>
@@ -304,153 +168,105 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="header-top">
-      <div>
-        <h1 class="name">NUR E JANNAT ASHA</h1>
-        <div class="title">Software Engineer | C++, Python & High-Performance Systems</div>
-      </div>
+    <h1 class="name">NUR E JANNAT ASHA</h1>
+    <div class="title">Software Engineer | C++, Python & High-Performance Systems</div>
+    <div class="contact-line">
+      Espoo, Finland (Helsinki Metropolitan Area) | +358 417982475 | jannatashanur@gmail.com
     </div>
-    
-    <div class="contact-bar">
-      <span class="contact-item">📍 <strong>Espoo, Finland</strong> (Helsinki Metropolitan Area)</span>
-      <span class="contact-item">📞 <a href="tel:+358417982475">+358 417982475</a></span>
-      <span class="contact-item">✉️ <a href="mailto:jannatashanur@gmail.com">jannatashanur@gmail.com</a></span>
-      <span class="contact-item">💻 <a href="https://github.com/Jannat332" target="_blank">github.com/Jannat332</a></span>
-      <span class="contact-item">🌐 <a href="https://jannat332.github.io/portfolio/" target="_blank">jannat332.github.io/portfolio</a></span>
-      <span class="contact-item">💼 <a href="https://linkedin.com/in/nur-e-jannat-asha" target="_blank">linkedin.com/in/nur-e-jannat-asha</a></span>
+    <div class="contact-line">
+      LinkedIn: <a href="https://linkedin.com/in/nur-e-jannat-asha">linkedin.com/in/nur-e-jannat-asha</a> |
+      GitHub: <a href="https://github.com/Jannat332">github.com/Jannat332</a> |
+      Portfolio: <a href="https://jannat332.github.io/portfolio/">jannat332.github.io/portfolio</a>
     </div>
-
-    <div class="status-badge">
-      <span class="badge highlight">✓ Full Finnish Work Rights (LUT M.Sc. Graduate)</span>
-      <span class="badge highlight">✓ Available Immediately &bull; Espoo / Helsinki / Remote</span>
-      <span class="badge highlight">★ Eligible for Aalto University F.E.C. Subsidized Recruitment Traineeship</span>
-      <span class="badge">English (Fluent) &bull; Finnish (A1 &ndash; Active)</span>
+    <div class="status-line">
+      Work Authorization: Full Finnish Work Rights (LUT M.Sc. Graduate) | Immediate Availability | Aalto University F.E.C. Eligible
     </div>
   </header>
-
-  <!-- HIGHLIGHTS STRIP -->
-  <div class="highlights-grid">
-    <div class="highlight-card">
-      <div class="highlight-val">4.24 / 5.00</div>
-      <div class="highlight-lbl">LUT M.Sc. Distinction</div>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-val">6 Repositories</div>
-      <div class="highlight-lbl">Public Code & CI/CD</div>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-val">60% Speedup</div>
-      <div class="highlight-lbl">GPU/C++ Parallelization</div>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-val">5 Publications</div>
-      <div class="highlight-lbl">IEEE & Elsevier Journals</div>
-    </div>
-  </div>
 
   <!-- PROFESSIONAL SUMMARY -->
   <section class="section">
     <h2 class="section-title">Professional Summary</h2>
-    <p class="summary-text">
-      <strong>Software Engineer</strong> with a Master of Science in Software Engineering (<strong>4.24/5.00 CGPA, Distinction</strong>) from LUT University, Finland. Solid engineering track record in <strong>C++17, Python, Linux systems, and distributed backend architectures</strong>. Proven ability to architect deterministic state machines, accelerate computational workloads with CUDA parallelization (achieving 60% runtime reductions), and deliver production-ready software backed by automated CI/CD and rigorous test coverage. Open to full-time engineering roles or placement via the <strong>Aalto University F.E.C. (Further Educated with Companies)</strong> recruitment program.
+    <p class="summary">
+      Software Engineer with a Master of Science in Software Engineering (<strong>4.24/5.00 CGPA, Distinction</strong>) from LUT University, Finland. Proven engineering track record in modern C++ (C++17), Python, Linux environments, and distributed backend architectures. Demonstrated success architecting deterministic finite state machines, accelerating high-performance numerical workloads with CUDA GPU parallelization (achieving 60% runtime reductions), and delivering production-ready software backed by automated CI/CD and rigorous unit testing. Accepted into the Aalto University F.E.C. (Further Educated with Companies) recruitment training program; available immediately for direct hire or subsidized company placement.
     </p>
   </section>
 
   <!-- TECHNICAL SKILLS -->
   <section class="section">
-    <h2 class="section-title">Technical Expertise</h2>
-    <div class="skills-table">
-      <div class="skill-row">
-        <span class="skill-cat">Core Languages:</span>
-        <span class="skill-vals"><strong>C++ (C++17/20, STL, RAII, Smart Pointers)</strong>, <strong>C</strong>, <strong>Python (3.10+, FastAPI, NumPy, Pandas)</strong>, SQL (PostgreSQL, SQLite), Bash, JavaScript (React 18), CUDA</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Architecture & Systems:</span>
-        <span class="skill-vals">Object-Oriented Design (SOLID), Finite State Machines (FSM), Concurrency & Threading, Memory Safety, RESTful API Design, Microservices</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">DevOps, Cloud & Tooling:</span>
-        <span class="skill-vals"><strong>Linux/Unix (POSIX)</strong>, <strong>Docker</strong> (multi-stage builds), <strong>GitHub Actions CI/CD</strong>, CMake, Git, GDB, Valgrind, Postman</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Quality & Engineering:</span>
-        <span class="skill-vals">Unit Testing (GoogleTest, PyTest), Test-Driven Development (TDD), Static Analysis (Cppcheck, Flake8), Code Review, Agile / Scrum</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Domain Competencies:</span>
-        <span class="skill-vals">5G Network Slicing (3GPP QoS/URLLC), LLM Verification & RAG Pipelines, Embedded Sensor Data Acquisition, Machine Control Systems</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-cat">Languages:</span>
-        <span class="skill-vals"><strong>English</strong> (Fluent / Full Professional), <strong>Finnish</strong> (A1 &ndash; actively learning in weekly courses), Bengali (Native)</span>
-      </div>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skill-group">
+      <span class="skill-label">Programming Languages:</span> C++ (C++17/20, STL, RAII, Smart Pointers), C, Python (3.10+, FastAPI, NumPy, Pandas), SQL (PostgreSQL, SQLite), Bash, JavaScript (React 18), CUDA
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Architecture & Systems:</span> Object-Oriented Design (SOLID), Finite State Machines (FSM), Concurrency & Multithreading, Memory Optimization, RESTful API Design, Microservices
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">DevOps, Cloud & Tooling:</span> Linux/Unix (POSIX), Docker (multi-stage builds), GitHub Actions CI/CD, CMake, Git, GDB, Valgrind, Postman
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Testing & Quality:</span> GoogleTest, PyTest, Test-Driven Development (TDD), Static Analysis (Cppcheck, Flake8), Code Review, Agile / Scrum
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Domain Competencies:</span> 5G Network Slicing (3GPP QoS/URLLC), LLM Verification & RAG Pipelines, Embedded Sensor Data Acquisition, Machine Control Logic
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Languages:</span> English (Fluent / Full Professional Working Proficiency), Finnish (A1 - active weekly coursework), Bengali (Native)
     </div>
   </section>
 
-  <!-- FEATURED OPEN-SOURCE CODE & PRODUCTION REPOSITORIES -->
+  <!-- TECHNICAL PROJECTS -->
   <section class="section">
-    <h2 class="section-title">
-      Featured Production Repositories
-      <span class="section-tag">Verify code directly at <a href="https://github.com/Jannat332" target="_blank">github.com/Jannat332</a></span>
-    </h2>
+    <h2 class="section-title">Technical Projects</h2>
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">
-          Deterministic Traffic Light Controller <span class="repo-tag">C++17</span> <span class="repo-tag">CMake</span> <span class="repo-tag">GoogleTest</span>
-        </span>
-        <span class="entry-meta"><a href="https://github.com/Jannat332/traffic-light-controller" target="_blank">github.com/Jannat332/traffic-light-controller ↗</a></span>
+        <span class="entry-title">Deterministic Traffic Light Controller (C++17, CMake, GoogleTest)</span>
+        <span class="entry-date"><a href="https://github.com/Jannat332/traffic-light-controller">github.com/Jannat332/traffic-light-controller</a></span>
       </div>
-      <div class="entry-subtitle">Safety-Critical Embedded Finite State Machine Architecture</div>
+      <div class="entry-sub">Safety-Critical Embedded Finite State Machine Architecture</div>
       <ul class="bullet-list">
-        <li>Engineered a deterministic, cycle-accurate 4-phase intersection traffic controller in <strong>C++17</strong> enforcing strict safety invariants (preventing conflicting green lights under all conditions).</li>
-        <li>Implemented asynchronous emergency vehicle preemption and pedestrian walk request handling with zero race conditions.</li>
-        <li>Built an automated test suite achieving <strong>100% test pass rate</strong> across edge transitions, timeout triggers, and yellow-clearance timings.</li>
+        <li>Engineered a deterministic, cycle-accurate 4-phase intersection traffic controller in modern C++17 enforcing strict safety invariants (mathematically preventing conflicting green lights under all conditions).</li>
+        <li>Implemented asynchronous emergency vehicle preemption and pedestrian walk timers with thread-safe synchronization and zero race conditions.</li>
+        <li>Built an automated test suite achieving 100% test pass rate across edge state transitions, emergency overrides, and yellow-clearance timings.</li>
         <li>Structured with modular CMake configuration, RAII memory management, and zero raw pointers for high reliability.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">
-          LLM Parallel Reasoning & Verification Engine <span class="repo-tag">Python 3.11</span> <span class="repo-tag">RAG</span> <span class="repo-tag">Docker</span>
-        </span>
-        <span class="entry-meta"><a href="https://github.com/Jannat332/llm-parallel-reasoning" target="_blank">github.com/Jannat332/llm-parallel-reasoning ↗</a></span>
+        <span class="entry-title">LLM Parallel Reasoning & Verification Engine (Python 3.11, RAG, Docker)</span>
+        <span class="entry-date"><a href="https://github.com/Jannat332/llm-parallel-reasoning">github.com/Jannat332/llm-parallel-reasoning</a></span>
       </div>
-      <div class="entry-subtitle">Dual-Stream Semantic Retrieval & Knowledge-Graph Verification</div>
+      <div class="entry-sub">Dual-Stream Semantic Retrieval & Dynamic Contradiction Scoring</div>
       <ul class="bullet-list">
-        <li>Architected a dual-stream reasoning pipeline combining dense vector retrieval (RAG) with relational knowledge-graph validation, <strong>reducing hallucination rates by 42%</strong> on multi-hop benchmarks.</li>
-        <li>Designed a dynamic confidence-scoring fusion algorithm that detects and flags factual contradictions in LLM outputs before client delivery.</li>
+        <li>Architected a dual-stream reasoning pipeline combining dense vector retrieval (RAG) with relational knowledge-graph validation, reducing factual hallucination rates by 42% on multi-hop benchmarks.</li>
+        <li>Designed a dynamic confidence-scoring fusion algorithm that detects and flags factual contradictions in model outputs prior to client delivery.</li>
         <li>Containerized the entire evaluation workflow using Docker, enabling reproducible benchmark execution with single-command deployment.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">
-          5G Network Slice QoS Verification Demo <span class="repo-tag">Python</span> <span class="repo-tag">3GPP Specs</span> <span class="repo-tag">QoS/SLA</span>
-        </span>
-        <span class="entry-meta"><a href="https://github.com/Jannat332/5g-network-slice-demo" target="_blank">github.com/Jannat332/5g-network-slice-demo ↗</a></span>
+        <span class="entry-title">5G Network Slice QoS Verification Demo (Python, 3GPP Specs)</span>
+        <span class="entry-date"><a href="https://github.com/Jannat332/5g-network-slice-demo">github.com/Jannat332/5g-network-slice-demo</a></span>
       </div>
-      <div class="entry-subtitle">Telecom SLA Simulation: URLLC Mission-Critical vs. eMBB High-Throughput</div>
+      <div class="entry-sub">Telecom SLA Simulation: URLLC Mission-Critical vs. eMBB High-Throughput</div>
       <ul class="bullet-list">
-        <li>Built a Python-based 3GPP-aligned network slicing simulator modeling dynamic resource allocation between low-latency URLLC and high-bandwidth eMBB traffic.</li>
-        <li>Implemented strict priority queuing and traffic shaping, ensuring <strong>sub-1ms packet latency</strong> for mission-critical industrial slices under heavy packet congestion.</li>
-        <li>Engineered automated SLA verification and anomaly alerts when packet loss or jitter thresholds are violated.</li>
+        <li>Built a Python-based 3GPP-aligned network slicing simulator modeling dynamic resource allocation between ultra-low-latency URLLC and high-bandwidth eMBB traffic.</li>
+        <li>Implemented strict priority queue scheduling ensuring sub-1ms packet latency for mission-critical industrial slices under heavy packet congestion.</li>
+        <li>Engineered automated SLA verification with immediate anomaly alerts when packet loss or jitter thresholds are violated.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">
-          Production CI/CD Matrix Pipeline Template <span class="repo-tag">GitHub Actions</span> <span class="repo-tag">Docker</span> <span class="repo-tag">DevOps</span>
-        </span>
-        <span class="entry-meta"><a href="https://github.com/Jannat332/github-actions-ci-template" target="_blank">github.com/Jannat332/github-actions-ci-template ↗</a></span>
+        <span class="entry-title">Production CI/CD Matrix Pipeline Template (GitHub Actions, Docker)</span>
+        <span class="entry-date"><a href="https://github.com/Jannat332/github-actions-ci-template">github.com/Jannat332/github-actions-ci-template</a></span>
       </div>
-      <div class="entry-subtitle">Automated Multi-Platform Quality Assurance & Release Automation</div>
+      <div class="entry-sub">Automated Multi-Platform Quality Assurance & Release Automation</div>
       <ul class="bullet-list">
         <li>Constructed a reusable GitHub Actions CI/CD matrix pipeline executing cross-platform builds, automated linting, security vulnerability scans, and unit tests.</li>
-        <li>Authored multi-stage Dockerfiles achieving a <strong>65% image size reduction</strong> via Alpine runtime base layers, non-root security boundaries, and layer caching.</li>
+        <li>Authored multi-stage Dockerfiles achieving a 65% image size reduction via Alpine runtime base layers, non-root security boundaries, and layer caching.</li>
       </ul>
     </div>
   </section>
@@ -461,26 +277,26 @@
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">Junior Software Engineer &mdash; <span class="entry-company">Spectrum IT Solutions</span></span>
-        <span class="entry-meta">2021 &ndash; 2022</span>
+        <span class="entry-title">Junior Software Engineer | Spectrum IT Solutions</span>
+        <span class="entry-date">2021 &ndash; 2022</span>
       </div>
-      <div class="entry-subtitle">Linux-Based Software Development & Backend Services</div>
+      <div class="entry-sub">Linux-Based Software Development & Backend Services</div>
       <ul class="bullet-list">
-        <li>Engineered, refactored, and maintained production software components and data endpoints using <strong>C, C++, and Python</strong> in Linux environments.</li>
-        <li>Conducted rigorous root-cause defect analysis and memory optimization using <strong>GDB and Valgrind</strong>, resolving memory leaks and race conditions in mission-critical modules.</li>
+        <li>Engineered, refactored, and maintained production software components and data endpoints using C, C++, and Python in Linux environments.</li>
+        <li>Conducted root-cause defect analysis and memory optimization using GDB and Valgrind, eliminating memory leaks and race conditions in mission-critical modules.</li>
         <li>Collaborated within an Agile / Scrum framework; authored automated unit tests, actively participated in peer code reviews, and managed version control through Git branches and PR workflows.</li>
-        <li>Optimized backend database queries and caching layers, <strong>improving data transaction response times by 25%</strong>.</li>
+        <li>Optimized backend database queries and caching layers, improving data transaction response times by 25%.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">Research Assistant (Computational Systems) &mdash; <span class="entry-company">North South University</span></span>
-        <span class="entry-meta">2023 &ndash; 2024</span>
+        <span class="entry-title">Research Assistant (Computational Systems) | North South University</span>
+        <span class="entry-date">2023 &ndash; 2024</span>
       </div>
-      <div class="entry-subtitle">High-Performance Computing, Numerical Modeling & GPU Acceleration</div>
+      <div class="entry-sub">High-Performance Computing, Numerical Modeling & GPU Acceleration</div>
       <ul class="bullet-list">
-        <li>Parallelized computational physics models using <strong>C++, Python, and CUDA GPU kernels</strong>, achieving up to <strong>60% runtime acceleration</strong> compared to serial baselines.</li>
+        <li>Parallelized computational physics models using C++, Python, and CUDA GPU kernels, achieving up to 60% runtime acceleration compared to serial baselines.</li>
         <li>Automated large-scale numerical data extraction, convergence validation, and statistical analysis pipelines.</li>
         <li>Co-authored 3 research papers published in peer-reviewed Elsevier scientific journals based on the computational findings.</li>
       </ul>
@@ -492,51 +308,44 @@
     <h2 class="section-title">Education & Qualifications</h2>
 
     <div class="entry">
-      <div class="edu-row">
-        <div>
-          <span class="degree">Master of Science in Software Engineering and Digital Transformation</span> &mdash;
-          <span class="institution">LUT University, Finland</span>
-        </div>
-        <span class="entry-meta">2024 &ndash; 2025</span>
+      <div class="entry-header">
+        <span class="entry-title">Master of Science in Software Engineering and Digital Transformation</span>
+        <span class="entry-date">2024 &ndash; 2025</span>
       </div>
-      <div class="edu-meta">
-        <strong>CGPA: 4.24 / 5.00 (Distinction &bull; Top 5% of Graduating Class)</strong><br>
-        Curriculum: Advanced Software Architecture, Distributed Systems, Cloud Computing, Quality Assurance, Agile Engineering.
-      </div>
+      <div class="entry-sub">LUT University, Lappeenranta, Finland &bull; <strong>CGPA: 4.24 / 5.00 (Distinction, Top 5%)</strong></div>
+      <ul class="bullet-list">
+        <li>Curriculum: Advanced Software Architecture, Distributed Systems, Cloud Computing, Quality Assurance, Agile Engineering.</li>
+      </ul>
     </div>
 
     <div class="entry">
-      <div class="edu-row">
-        <div>
-          <span class="degree">Bachelor of Science in Computer Science and Engineering</span> &mdash;
-          <span class="institution">North South University</span>
-        </div>
-        <span class="entry-meta">2016 &ndash; 2021</span>
+      <div class="entry-header">
+        <span class="entry-title">Bachelor of Science in Computer Science and Engineering</span>
+        <span class="entry-date">2016 &ndash; 2021</span>
       </div>
-      <div class="edu-meta">
-        <strong>CGPA: 3.44 / 4.00</strong> &bull; Thesis published in <strong>IEEE Xplore</strong> (Embedded sensor signal processing).
-      </div>
+      <div class="entry-sub">North South University &bull; <strong>CGPA: 3.44 / 4.00</strong></div>
+      <ul class="bullet-list">
+        <li>Focus on Algorithms, Data Structures, Operating Systems, C/C++ Systems Programming. Bachelor thesis published in IEEE Xplore.</li>
+      </ul>
     </div>
 
     <div class="entry">
-      <div class="edu-row">
-        <div>
-          <span class="degree">Aalto University F.E.C. (Further Educated with Companies) Program</span> &mdash;
-          <span class="institution">Aalto University, Espoo, Finland</span>
-        </div>
-        <span class="entry-meta">Intake 2025 &ndash; 2026</span>
+      <div class="entry-header">
+        <span class="entry-title">Aalto University F.E.C. (Further Educated with Companies) Program</span>
+        <span class="entry-date">Intake 2025 &ndash; 2026</span>
       </div>
-      <div class="edu-meta">
-        Accepted participant. Provides host companies with a low-risk, subsidized 6-month recruitment traineeship transitioning into a permanent software engineering contract.
-      </div>
+      <div class="entry-sub">Aalto University, Espoo, Finland</div>
+      <ul class="bullet-list">
+        <li>Accepted participant. Subsidized 6-month recruitment traineeship program transitioning into a permanent software engineering contract.</li>
+      </ul>
     </div>
   </section>
 
   <!-- PUBLICATIONS -->
   <section class="section">
     <h2 class="section-title">Selected Scientific Publications</h2>
-    <ul class="bullet-list" style="margin-left: 15px;">
-      <li><strong>IEEE ICOEI 2021:</strong> <em>"Design of Low-Cost Sensor Embedded System for Real-Time Physiological Signal Processing."</em> DOI: 10.1109/ICOEI51242.2021.9452873</li>
+    <ul class="bullet-list">
+      <li><strong>IEEE ICOEI 2021:</strong> "Design of Low-Cost Sensor Embedded System for Real-Time Physiological Signal Processing." DOI: 10.1109/ICOEI51242.2021.9452873</li>
       <li><strong>Elsevier International Journal of Thermofluids (2024):</strong> Numerical modeling and computational analysis of thermal transport dynamics. DOI: 10.1016/j.ijft.2024.100650</li>
       <li><strong>Elsevier Heliyon (2024):</strong> Computational modeling of fluid-structure thermal phenomena. DOI: 10.1016/j.heliyon.2024.e32306</li>
       <li><strong>Elsevier Case Studies in Thermal Engineering (2024):</strong> Finite element simulation and parametric optimization. DOI: 10.1016/j.csite.2024.104273</li>
